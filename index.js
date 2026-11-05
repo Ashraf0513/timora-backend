@@ -31,6 +31,10 @@ app.post("/about",async function(req,res){
     }
 })
 
+module.exports=app;
+
+if(require.main===module){
 app.listen(5000,function(){
     console.log("Sever is Started......")
 })
+}
